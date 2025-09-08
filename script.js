@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 🎯 TODO 4.4 : Raccourci clavier (bonus)
 document.addEventListener('keydown', (event) => {
     // Appuyer sur Espace pour une nouvelle citation
-    if (event.code === 'Space' && !btnNouvelle.disabled) {
+    if (event.code === 'Space' && !btnNouvelle.disabled && !event.target.matches('input, textarea')) {
         event.preventDefault(); // Empêche le scroll de la page
         console.log('⌨️ Raccourci clavier détecté (Espace)');
         obtenirCitation();
