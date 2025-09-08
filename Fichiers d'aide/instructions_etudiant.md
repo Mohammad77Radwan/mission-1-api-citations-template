@@ -24,20 +24,32 @@ Vous allez analyser et tester une application web qui :
 
 ### 🌐 Test de l'API Quotable
 
-**Test rapide de l'API dans votre navigateur :**
 
-1. Ouvrez un nouvel onglet et copiez-collez l'URL suivante :
+**Comment tester l'API et voir le même résultat que sur ReqBin :**
+
+1. Ouvrez le site [ReqBin](https://reqbin.com/).
+2. Dans le champ "Enter Request URL", copiez-collez :
     ```
     https://api.quotable.io/random
     ```
-    Vous verrez s'afficher une citation au format JSON.
+3. Vérifiez que la méthode sélectionnée est bien "GET".
+4. Cliquez sur le bouton "Send".
+5. Vous verrez apparaître la réponse de l'API, qui ressemble à ceci :
+    ```json
+    {
+      "content": "I will prepare and someday my chance will come.",
+      "author": "Abraham Lincoln",
+      "length": 47,
+      "_id": "c041Ur1c8R",
+      "tags": ["Famous Quotes", "Inspirational"]
+    }
+    ```
 
-2. Pour aller plus loin, ouvrez les outils de développement (F12), onglet "Network" :
-    - Cliquez sur une requête vers l'API.
-    - Vous pouvez rejouer la requête (bouton "Replay") et observer la réponse détaillée.
-    - Vérifiez que la méthode HTTP utilisée est bien GET.
+**Astuce :** Vous pouvez aussi obtenir ce résultat directement dans votre navigateur :
+- Copiez l'URL ci-dessus dans la barre d'adresse d'un nouvel onglet et appuyez sur Entrée.
+- Le navigateur affichera le résultat au format texte ou JSON (selon le navigateur).
 
-Cette manipulation vous permet de vérifier que l'API fonctionne et de voir le format des données reçues.
+Si le format n'est pas aussi lisible qu'avec ReqBin, utilisez ReqBin ou une extension comme "REST Client" dans VS Code pour une présentation claire.
 
 **Réponse type que vous obtiendrez :**
 ```json
