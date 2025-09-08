@@ -3,20 +3,13 @@
 Bienvenue dans cette mission ! Ce guide vous accompagne pour comprendre et tester votre premier projet d'intégration API avec JavaScript moderne.
 
 ---
-
 ## 🎯 Vue d'ensemble de la Mission
 
 Vous allez analyser et tester une application web qui :
-- 📡 Récupère des citations inspirantes depuis une API REST
-- 🎨 Les affiche de manière élégante et responsive
-- 🔄 Permet de générer de nouvelles citations à la demande
-- ⚠️ Gère les erreurs avec élégance
-- 🚀 Se déploie automatiquement sur GitHub Pages
 
 **🎓 IMPORTANT : Le code est déjà complet et fonctionnel !**  
 **Votre mission : Comprendre, tester, et personnaliser**
 
-**Durée estimée :** 60-90 minutes  
 **Niveau :** Débutant à intermédiaire  
 **Prérequis :** Bases HTML, CSS, JavaScript
 
@@ -30,10 +23,21 @@ Vous allez analyser et tester une application web qui :
 3. **Examinez le code** : Il est complet et documenté avec des TODO !
 
 ### 🌐 Test de l'API Quotable
-**Testez l'API dans votre navigateur :**
-```
-https://api.quotable.io/random
-```
+
+**Test rapide de l'API dans votre navigateur :**
+
+1. Ouvrez un nouvel onglet et copiez-collez l'URL suivante :
+    ```
+    https://api.quotable.io/random
+    ```
+    Vous verrez s'afficher une citation au format JSON.
+
+2. Pour aller plus loin, ouvrez les outils de développement (F12), onglet "Network" :
+    - Cliquez sur une requête vers l'API.
+    - Vous pouvez rejouer la requête (bouton "Replay") et observer la réponse détaillée.
+    - Vérifiez que la méthode HTTP utilisée est bien GET.
+
+Cette manipulation vous permet de vérifier que l'API fonctionne et de voir le format des données reçues.
 
 **Réponse type que vous obtiendrez :**
 ```json
@@ -46,19 +50,12 @@ https://api.quotable.io/random
 }
 ```
 
----
-
 ## 2️⃣ **Structure du Code Existant**
 
 ### 🎯 **Votre Mission Réelle**
 
 **⚠️ Le code dans `script.js` est DÉJÀ COMPLET et FONCTIONNEL !**
-
-Votre travail consiste à :
-1. **📖 Comprendre** chaque partie du code avec les commentaires TODO
-2. **🧪 Tester** avec la console F12 et Network
 3. **🔧 Déboguer** si nécessaire avec les outils fournis
-4. **🌟 Personnaliser** avec les fonctionnalités bonus
 
 ### 📁 **Organisation du Script Principal**
 
@@ -81,12 +78,7 @@ const citationAuthor = document.getElementById('citation-author');
 // gererErreur() - TODO 3.1 à 3.4
 // Event listeners - TODO 4.1 à 4.4
 
-// ✅ FONCTIONS BONUS (disponibles)
-// partagerCitation() - Partage social
-// ajouterAuxFavoris() - Sauvegarde localStorage
-// Raccourcis clavier - Barre d'espace
 ```
-
 ---
 
 ## 3️⃣ Étape 1 : Comprendre l'Appel API
