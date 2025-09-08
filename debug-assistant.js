@@ -374,3 +374,12 @@ console.log(`
 
 // Ajout d'un raccourci global
 window.help = window.debug.help;
+
+// Raccourci de validation automatique compatible avec les instructions
+window.testerMonCode = async function() {
+    try {
+        await window.debug.validateCode();
+    } catch (e) {
+        console.error('❌ Erreur pendant testerMonCode():', e);
+    }
+};
